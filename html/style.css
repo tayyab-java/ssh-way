@@ -1,0 +1,56 @@
+body{
+    background: #eeedeb;
+}
+.wrapper{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.cube-wrap {
+width: 300px;
+height: 300px;
+-webkit-perspective: 2000px;
+-webkit-perspective-origin: 50% -180% ;
+}
+.single-box {
+background-image: url(https://lbistech.com/img/lbistech.jpg);
+background-size: contain;
+display: block;
+position: absolute;
+width: 240px;
+height: 200px;
+background-color: #dfe2e4;
+-webkit-transform: rotateY(45deg) translateZ(-100px) rotateX(15deg);
+-webkit-transform-origin: 50% 50% 50%;
+/* border: 3px solid #fff; */
+}
+.box {
+-webkit-transform-style: preserve-3d;
+-webkit-animation: rotate 10s infinite linear;
+}
+.side-front { 
+-webkit-transform: translateZ(120px) scaleX(95%);
+}
+.side-back { 
+-webkit-transform: rotateY(180deg) scaleX(95%) translateZ(120px);
+}
+.side-top {
+background-image: url(https://lbistech.com/img/lbistech.jpg);
+-webkit-transform: rotateX(90deg) scaleX(90%) scaleY(120%) translateZ(100px);
+}
+.side-bottom { 
+-webkit-transform: rotateX(-90deg) scaleX(90%) translateZ(100px); 
+}
+.side-left { 
+    
+-webkit-transform: rotateY(-90deg) scaleX(95%) translateZ(100px); 
+}
+.side-right { 
+-webkit-transform: rotateY(90deg) scaleX(95%) translateZ(100px); 
+}
+
+@-webkit-keyframes rotate {
+0% { -webkit-transform: rotateY(0); }
+100% { -webkit-transform: rotateY(360deg); }
+}
