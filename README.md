@@ -1,4 +1,4 @@
-# Lbistech institute
+# Lbistech institute 2
 ###### _CUBE ROTATION PROJECT(CSS,HTML)_
 
 [![N|Solid](https://lbistech.com/img/lbistech.jpg)](https://lbistech.com/index.html)
